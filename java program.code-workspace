@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"chap - 6 (Recursion)",
+			"chap - 5 (String)",
+			"chap - 4 (Array)",
+			"chap - 3(Function)",
+			"Question",
+			"Stack"
+		]
+	}
+}
