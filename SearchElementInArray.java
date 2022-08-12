@@ -1,5 +1,5 @@
 import java.util.*;
-public class TwoDArray {
+public class SearchElementInArray {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter order of Array in m x n form");
@@ -25,6 +25,23 @@ public class TwoDArray {
                 }
                 System.out.println();
             }
+            System.out.println("Enter element you want to search");
+            int el = sc.nextInt();
+            for(int i = 0; i < arr.length ; i++)
+            {
+                for(int j = 0; j < arr[0].length; j++)
+                {
+                    if(arr[i][j] == el)
+                    {
+                        System.out.println("Element found at position  i = "+i+" j = "+j);
+                        return;
+                    }
+                    
+                }
+                
+            }
         }
+
+        System.out.println("Element not found");
     }
 }

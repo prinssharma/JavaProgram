@@ -1,5 +1,5 @@
 import java.util.*;
-public class TwoDArray {
+public class RotateBy90 {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter order of Array in m x n form");
@@ -25,6 +25,18 @@ public class TwoDArray {
                 }
                 System.out.println();
             }
+            
+            System.out.println("After rotation 90 degree matrix is : ");
+            for(int i = 0; i < arr.length ; i++)
+            {
+                for(int j = arr[0].length-1; j >= 0; j--)
+                {
+                    System.out.print(arr[j][i]+"\t");
+                }
+                System.out.println();
+            }
         }
+
+
     }
 }

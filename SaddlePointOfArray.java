@@ -1,5 +1,5 @@
 import java.util.*;
-public class TwoDArray {
+public class SaddlePointOfArray {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter order of Array in m x n form");
@@ -25,6 +25,35 @@ public class TwoDArray {
                 }
                 System.out.println();
             }
+
+            for(int i = 0; i < arr.length; i++)
+            {
+                int svj = 0;
+                for(int j = 1; j < arr.length; j++)
+                {
+                    if(arr[i][svj] < arr[i][svj])
+                    {
+                        svj = j;
+                    }
+                }
+                boolean flag = true;
+                for(int k = 0; k < arr.length; k++)
+                {
+                    if(arr[k][svj] > arr[i][svj])
+                    {
+                        flag = false;
+                        break;
+                    }
+                }
+                if(flag == true)
+                {
+                System.out.println("Saddle point is = "+arr[i][svj]);
+                return;
+                }      
+                  
+            }
         }
+
+        System.out.println("no saddle point");
     }
 }

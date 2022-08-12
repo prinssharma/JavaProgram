@@ -1,14 +1,14 @@
 import java.util.*;
-public class TwoDArray {
+public class DiagonalTraversal {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("Enter order of Array in m x n form");
-            int m = sc.nextInt();
+            System.out.println("Enter order of Array n");
+
             int n = sc.nextInt();
-            int arr[][] = new int[m][n];
+            int arr[][] = new int[n][n];
 
             System.out.println("Enter array elements");
-            for(int i = 0; i < m ; i++)
+            for(int i = 0; i < n ; i++)
             {
                 for(int j = 0; j < n; j++)
                 {
@@ -25,6 +25,16 @@ public class TwoDArray {
                 }
                 System.out.println();
             }
+
+            System.out.println(" Diagonal Traversal of matrix is : ");
+            for(int g = 0; g < arr.length ; g++)
+            {
+                for(int i = 0, j = g; j < arr.length; i++, j++)
+                {
+                    System.out.println(arr[i][j]);
+                }
+            }
         }
+
     }
 }

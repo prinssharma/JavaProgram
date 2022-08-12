@@ -1,5 +1,5 @@
 import java.util.*;
-public class TwoDArray {
+public class WaveTraversal {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter order of Array in m x n form");
@@ -24,6 +24,25 @@ public class TwoDArray {
                     System.out.print(arr[i][j]+"\t");
                 }
                 System.out.println();
+            }
+
+            System.out.println("Wave traversal of matrix is : ");
+            for(int j = 0; j < arr[0].length ; j++)
+            {
+                if(j % 2 == 0)
+                {
+                    for(int i = 0; i< arr.length; i++)
+                    {
+                        System.out.println(arr[i][j]);
+                    }
+                }
+                else
+                {
+                    for(int i = arr.length - 1; i >= 0; i--)
+                    {
+                        System.out.println(arr[i][j]);
+                    }
+                }
             }
         }
     }
