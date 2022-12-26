@@ -1,7 +1,7 @@
 import java.io.FileInputStream;
 
 
-public class First{
+public class FirstException{
 
     public static void main(String[] args) {
 
