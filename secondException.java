@@ -1,6 +1,6 @@
 
 
-public class second {
+public class secondException {
     
     public static void main(String[] args) {
         
