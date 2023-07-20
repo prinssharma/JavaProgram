@@ -14,7 +14,7 @@ public class PrintPrime {
                 System.out.print(" "+i);
             }
         }
-
+        s.close();
     }
 
     boolean isPrime(int n) {
@@ -29,6 +29,7 @@ public class PrintPrime {
         }
         
         return true;
+        
     }
     
 }
