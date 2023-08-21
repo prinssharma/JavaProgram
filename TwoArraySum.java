@@ -19,7 +19,7 @@ public class TwoArraySum {
         for(int i=0; i<n; i++){
             arr2[i] =sc.nextInt();
         }
-
+        sc.close();
         System.out.println("Array 1 : "+ Arrays.toString(arr1));
         System.out.println("Array 2 : "+ Arrays.toString(arr2));
         
