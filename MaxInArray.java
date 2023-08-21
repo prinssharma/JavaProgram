@@ -10,11 +10,11 @@ public class MaxInArray {
         int s = sc.nextInt();
         int arr[] = new int[s];
         System.out.println("Enter array element ");
-
+        
         for(int i=0; i<s; i++){
             arr[i] = sc.nextInt();
         }
-
+        sc.close();
         System.out.print("Given array : ");
         System.out.println(Arrays.toString(arr));
         MaxInArray obj = new MaxInArray();

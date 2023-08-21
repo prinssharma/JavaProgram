@@ -15,7 +15,7 @@ public class LinearSearch {
         System.out.println("Enter key element : ");
         int key=sc.nextInt();
         System.out.println("Given array : "+ Arrays.toString(arr));
-
+        sc.close();
         for(int i=0; i<n; i++){
             if(n==0)
             {
@@ -29,5 +29,6 @@ public class LinearSearch {
             }
         }
         System.out.println("Element not present in the array");
+        
     }
 }

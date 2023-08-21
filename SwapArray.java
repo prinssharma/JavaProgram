@@ -14,7 +14,7 @@ class SwapArray{
         for(int i=0; i<s; i++){
             arr[i] = sc.nextInt();
         }
-
+        sc.close();
         System.out.print("Given array : ");
 
         for(int i=0; i<s; i++){
