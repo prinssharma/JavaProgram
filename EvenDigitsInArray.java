@@ -41,7 +41,6 @@ public class EvenDigitsInArray {
     public int countDigit(int n){
         int flag = 0;
         while(n>0){
-            int r = n % 10;
             flag++;
             n = n/10;
         }
