@@ -1,20 +1,20 @@
-public class CeilingOfNumber {
+public class FloorOfNumber {
+    
     public static void main(String[] args) {
-        int[] arr = {2, 3, 5, 9, 14, 16, 18};
+        int[] arr = {2, 4, 6, 9, 14, 16, 18};
         // int[] arr = {2, 1, -2, -9, -14, -16, -18};
-        int target = 20;
+        int target = 1;
         int ceil = searchCeilingNumber(arr, target);
-        System.out.println("Ceil value of "+target+" is : "+ceil);
+        System.out.println("Floor value of "+target+" is : "+ceil);
     }
 
     static int searchCeilingNumber(int[] arr, int key){
-
         int low=0;
         int high = arr.length -1;
         boolean isAsc = arr[low] < arr[high];
         int res = 0;
 
-        if(key > arr[high]){
+        if(key < arr[low]){
             return -1;
         }
         while(low <= high){
@@ -29,7 +29,7 @@ public class CeilingOfNumber {
             else{
                 high = mid -1;
             }
-            res = low;
+            res = high;
            }
            else{
             if(arr[mid] > key){
@@ -38,7 +38,7 @@ public class CeilingOfNumber {
             else{
                 high = mid -1;
             }
-            res = high;
+            res = low;
            }
         }
         return arr[res];
